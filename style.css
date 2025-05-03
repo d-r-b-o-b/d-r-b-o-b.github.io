@@ -52,7 +52,7 @@ h2 {
 }
 .left-links {
     text-align: left;
-    margin: 20px 0;
+    margin: 0px 0;
     font-size: 200%;
 }
 p{
@@ -63,7 +63,7 @@ p{
 
 hr {
     border: none;
-    height: 2px;
+    height: 1px;
     background-color: #B3A369;
-    margin: 20px 0;
+    margin: 0px 0;
 }
