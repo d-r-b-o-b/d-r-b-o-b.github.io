@@ -1,0 +1,60 @@
+body {
+    font-family: "Georgia";
+    background-color: #f0f0f0;
+    margin: 20px;
+    line-height: 1.5;
+    font-size: 1em;
+}
+.container {
+    background-color: #FFFFFF;
+    border: 1px solid #00263A;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    color: #00263A;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.contact-info {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #B3A369;
+}
+.links {
+    margin-top: 20px;
+}
+.links a {
+    color: #00263A;
+    text-decoration: none;
+}
+.links a:hover {
+    color: #B3A369;
+    text-decoration: underline;
+}
+a {
+    color: #00263A;
+    text-decoration: none;
+    font-size: 1em;
+}
+a:hover {
+    color: #B3A369;
+    text-decoration: underline;
+}
+h2 {
+    color: #00263A;
+}
+.contact-info strong {
+    color: #00263A;
+}
+.center-links {
+    text-align: center;
+    margin: 20px 0;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #B3A369;
+    margin: 20px 0;
+}
