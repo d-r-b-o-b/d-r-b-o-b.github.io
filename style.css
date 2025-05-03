@@ -50,14 +50,15 @@ h2 {
 .contact-info strong {
     color: #00263A;
 }
-.center-links {
-    text-align: center;
+.left-links {
+    text-align: left;
     margin: 20px 0;
+    font-size: 200%;
 }
 p{
     margin: 0;
     padding: 0;
-    font-size: 200%;
+    font-size: 100%;
 }
 
 hr {
