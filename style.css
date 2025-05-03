@@ -52,6 +52,10 @@ h2 {
     text-align: center;
     margin: 20px 0;
 }
+p{
+    font-size: 2em;
+}
+
 hr {
     border: none;
     height: 2px;
