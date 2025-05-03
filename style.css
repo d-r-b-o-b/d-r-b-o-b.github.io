@@ -35,7 +35,6 @@ h1 {
     text-decoration: underline;
 }
 a {
-    font-size: 3em;
     color: #00263A;
     text-decoration: none;
 }
@@ -54,7 +53,7 @@ h2 {
     margin: 20px 0;
 }
 p{
-    font-size: 2em;
+    font-size: 200%;
 }
 
 hr {
