@@ -14,8 +14,9 @@ body {
 }
 h1 {
     color: #00263A;
-    text-align: center;
-    padding-bottom: 10px;
+    text-align: left;
+    padding-bottom: 0px;
+    font-size: 3em;
 }
 .contact-info {
     background-color: #f8f8f8;
