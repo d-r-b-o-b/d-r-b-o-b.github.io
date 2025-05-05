@@ -19,7 +19,8 @@ h1 {
     padding-bottom: 0px;
     padding-top: 10px;
     margin: 0;
-    font-size: 54pt;
+    font-size: 300%;
+    /* font-size: 54pt; */
 }
 .contact-info {
     background-color: #f8f8f8;
@@ -87,13 +88,13 @@ h2 {
 p{
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 12pt;
 }
 .pub_journal{
     font-style: italic;
 }
 .pub_title{
-    font-size: 100%;
+    font-size: 12pt;
     padding: 1px;
     color: #00263A;
 }
