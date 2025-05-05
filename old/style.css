@@ -1,0 +1,124 @@
+body {
+    font-family: "Georgia";
+    background-color: #f0f0f0;
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 1em;
+}
+.container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+h1 {
+    color: #00263A;
+    text-align: left;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0;
+    font-size: 4em;
+}
+.contact-info {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #B3A369;
+}
+.links {
+    margin-top: 20px;
+}
+.links a {
+    color: #00263A;
+    text-decoration: none;
+}
+.links a:hover {
+    color: #B3A369;
+    text-decoration: underline;
+}
+a {
+    color: #00263A;
+    text-decoration: none;
+}
+a:hover {
+    color: #B3A369;
+    text-decoration: underline;
+}
+h2 {
+    color: #00263A;
+}
+.contact-info strong {
+    color: #00263A;
+}
+.left-links {
+    text-align: left;
+    margin: 0px 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 2em;
+}
+.center-links {
+    text-align: center;
+    margin: 0px 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 2em;
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #B3A369;
+    margin: 0px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.people-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+}
+
+.person {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.person img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay .text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.person:hover .overlay {
+    opacity: 1;
+}

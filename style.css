@@ -1,24 +1,25 @@
 body {
-    font-family: "Georgia";
+    font-family: "Arial";
     background-color: #f0f0f0;
     margin: 10px;
     line-height: 1.5;
     font-size: 1em;
 }
 .container {
+    font-family: "Arial";
     background-color: #FFFFFF;
-    border: 1px solid #00263A;
     padding: 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
+    overflow: hidden;
 }
 h1 {
     color: #00263A;
-    text-align: left;
+    text-align: center;
     padding-bottom: 0px;
-    padding-top: 0px;
+    padding-top: 10px;
     margin: 0;
-    font-size: 400%;
+    font-size: 4em;
 }
 .contact-info {
     background-color: #f8f8f8;
@@ -53,13 +54,53 @@ h2 {
 .left-links {
     text-align: left;
     margin: 0px 0;
-    font-size: 200%;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 2em;
+}
+.center-links {
+    background-color: #bcbcbc;
+    text-align: center;
+    margin: 0px 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 1.5em;
+}
+.center-image {
+    text-align: center;
+    margin: 0px 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 2em;
+}
+.center-image img{
+    max-width: 100%;
+}
+.center-quote{
+    font-style: italic;
+    font-size: 1.4em;
+    align-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }
 p{
     margin: 0;
     padding: 0;
     font-size: 100%;
 }
+.pub_journal{
+    font-style: italic;
+}
+.pub_title{
+    font-size: 100%;
+    padding: 1px;
+    color: #00263A;
+}
+.pub_names{
+    padding: 2px;
+}
+
 
 hr {
     border: none;
@@ -67,3 +108,172 @@ hr {
     background-color: #B3A369;
     margin: 0px 0;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+.people-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+}
+
+.brain_equation_container{
+    
+}
+
+.brain_equation_container p{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    align-content: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.person {
+    position: relative;
+    width: 20%;
+    min-width: 200px;
+    /* height: 150px; */
+}
+
+.person img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.overlay .text {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.person:hover .overlay {
+    opacity: 1;
+}
+
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    margin: 2px 0px;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+      font-family: inherit;
+      font-size: 100%
+  }
+  
+  .btn:hover {
+    background-color: #B3A369;
+  }
+  
+  .btn.active {
+    background-color: #B3A369;
+    color: white;
+  }
+
+
+  .center-buttons {
+    text-align: center;
+    margin: 0px 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    font-size: 1.2em;
+}
+
+
+/* pubs */
+.pub{ 
+    text-indent: 0px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    line-height: 120%;
+    background-color: #f1f1f1;
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+}
+/* .paper {
+    position: relative;
+    width: 80%;
+    min-width: 200px;
+} */
+.pub a {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.filterDiv {
+    float: left;
+    width: 100%;
+    text-align: left;
+    background-color: #f1f1f1;
+    margin-bottom: 2px;
+    display: none;
+}
+.pub:hover .overlay {
+    opacity: 0.25;
+    background-color: #B3A369;
+    transition: opacity 0s;
+}
+
+.show {
+    display: block;
+}
+.pub_container {
+    overflow: hidden;
+  }
+  
+
+/* abstracts */
+#expend {
+    display:none;  
+  }
+  
+  #expend + .smalldesc {
+    max-height:52px;
+    overflow:hidden;
+    transition:all .3s ease;
+  }
+  
+  #expend:checked + .smalldesc {
+    max-height:250px;  
+  }
+  
+  label {
+    color:blue;
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  
+  label:hover {
+    text-decoration:none;  
+  }
