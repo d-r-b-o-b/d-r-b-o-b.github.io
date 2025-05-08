@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSY 333 — Week 11, Class 1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  /*
+   * I add this to html files generated with pandoc.
+   171     5    32
+  139    11    41
+  107    17    49
+   76    23    58
+   44    29    66
+   12    35    75
+  
+   171     5    32
+  185    36    32
+  199    66    32
+  213    97    31
+  227   127    31
+  241   158    31
+  
+  171     5    32
+  194    56    32
+  218   107    31
+  241   158    31
+   */
+  
+  html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    color: black;/*#444;*/
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1em;
+    margin: auto;
+    max-width: 42em;
+    background: #fefefe;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 125%;
+    /*margin-top: 2em;*/
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: rgb(171,5,32);
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: rgb(194,56,32);
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    color: rgb(218,107,31);
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    color: rgb(241,158,31);
+    font-size: 1.1em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.9em;
+  }
+  
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PSY 333 — Week 11, Class 1</h1>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#subjective-probabilities">Subjective Probabilities</a><ul>
+<li><a href="#what-is-subjective-probability">What is subjective probability?</a></li>
+<li><a href="#deriving-the-shape-of-subjective-probability-curve">Deriving the shape of subjective probability curve</a><ul>
+<li><a href="#reference-points-in-the-subjective-probability-curve">Reference points in the subjective probability curve</a></li>
+</ul></li>
+<li><a href="#the-two-curves-for-prospect-theory">The two curves for Prospect Theory</a></li>
+</ul></li>
+</ul>
+</nav>
+<iframe src="https://arizona.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=b6425891-121d-416f-8de7-ac3701191628&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+</iframe>
+<h1 id="subjective-probabilities">Subjective Probabilities</h1>
+<p>Last week we introduced Prospect Theory, our final theory of decision making. Even this theory isn’t perfect, but it can handle all of the problems we’ve encountered with Expected Utility Theory and Expected Value Theory and it was good enough for the <a href="https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/facts/">2002 Nobel Prize in Economics</a>.</p>
+<blockquote>
+<p>As an aside, Kahneman only won half the Nobel prize in 2002. The other winner was <a href="https://en.wikipedia.org/wiki/Vernon_L._Smith">Vernon L. Smith</a>, who’s work we don’t cover in this class, but who was a faculty member at the University of Arizona for 25 years!</p>
+</blockquote>
+<p>In Prospect Theory we compute expected utilities using this equation</p>
+<p><span class="math display">\[EU = \sum_i \pi(p_i) U(g_i)\]</span></p>
+<p>where <span class="math inline">\(U(g_i)\)</span> is the utility of gain <span class="math inline">\(g_i\)</span> and <span class="math inline">\(\pi(p_i)\)</span> is the subjective probability of probability <span class="math inline">\(p_i\)</span>.</p>
+<p>Last week our focus was on the shape of the utility curve, <span class="math inline">\(U(g_i)\)</span>.</p>
+<p>Today we will focus on the subjective probability <span class="math inline">\(\pi(p_i)\)</span>.</p>
+<h2 id="what-is-subjective-probability">What is subjective probability?</h2>
+<p>Subjective probability is to probability what utility is to gains. So if utility is how you subjectively <em>feel</em> a particular gain or loss, subjective probability is how you subjectively <em>feel</em> about a probability.</p>
+<p>To get some insight let’s imagine playing the <a href="https://en.wikipedia.org/wiki/Wheel_of_Fortune_(American_game_show)">Wheel of Fortune</a> …</p>
+<div style="text-align:center">
+<p><img src="Week_11a_2.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>In this game you spin a wheel that has different outcomes on it. In the show these outcomes can be different amounts of money, special prizes, lose a turn, and BANKRUPT, where you lose all your money.</p>
+<p>To keep things simple we will consider a wheel with just 8 outcomes that are either $100 or BANKRUPT — not much of a TV show, but better for our purposes …</p>
+<div style="text-align:center">
+<p><img src="Week_11a_3.png"
+     alt=""
+     width=50%
+      /></p>
+</div>
+Now let’s imagine changing this wheel, by removing the BANKRUPT and thinking about how this change makes you <em>feel</em>. So, our initial wheel with one BANKRUPT out of 8 now has no chance of losing …
+<div style="text-align:center">
+<p><img src="Week_11a_4.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>If you’re like me, this change feels really good and actually quite big. I’ve gone from having some change of losing (12.5% chance to be precise) to having no chance of losing — that’s great!</p>
+<p>Now let’s imagine the same 12.5% reduction in probability of losing, but starting from a wheel with 4 BANKRUPTs …</p>
+<div style="text-align:center">
+<p><img src="Week_11a_6.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>If you are like me, this change feels smaller than the first wheel. In both cases I have a pretty high chance of losing. However, the change in probability is <em>exactly the same</em> (12.5%). The subjective feeling of that 12.5% is different in the two cases.</p>
+Finally, let’s imagine starting from an all BANKRUPT wheel …
+<div style="text-align:center">
+<p><img src="Week_11a_7.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>This also feels like a large change in probability, I’ve gone from being guaranteed to go BANKRUPT to having at least some chance of getting $100. Again the <em>actual</em> change in probability is still the same.</p>
+<h2 id="deriving-the-shape-of-subjective-probability-curve">Deriving the shape of subjective probability curve</h2>
+<p>These three “data” points are enough to generate the shape of the subjective probability curve. Let’s see how …</p>
+<p>First, before we can do any sketching of shape, we need to think about what quantities are going on the axes of our plot. It isn’t gain and Utility this time. Instead if we are plotting the subjective probability (<span class="math inline">\(\pi(p_i)\)</span>) as a function of actual probability (<span class="math inline">\(p_i\)</span>), we need <span class="math inline">\(p_i\)</span> on the x-axis and <span class="math inline">\(\pi(p_i)\)</span> on the y-axis.</p>
+<div style="text-align:center">
+<p><img src="Week_11a_fig3.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Next, let’s make some assumptions about the subjective probability of 0 and 1. If I tell you that the probability of something happening is either 0 or 1 then we are talking about <em>certainty</em> — these things will definitely not happen or definitely will happen. People are pretty good at understaning what definitely means, so let’s assume that the subjective probability of 0 is 0 and the subjective probability of 1 is 1. We can write this mathematically as</p>
+<p><span class="math display">\[\pi(p_i = 0) = 0 \quad\mbox{ and } \quad \pi(p_i = 1) = 1\]</span></p>
+<p>In addition, we can add two points to the plot …</p>
+<div style="text-align:center">
+<p><img src="Week_11a_fig4.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Now let’s consider the first wheel. In this case a change from actual probability 12.5% (<span class="math inline">\(p_i = 0.125\)</span>) to actual probability 0% (<span class="math inline">\(p_i = 0\)</span>) felt big. So let’s make the subjective probability of 12.5% bigger than 12.5%. Let’s make it 21%, so</p>
+<p><span class="math display">\[\pi(p_i = 0.125) = 0.21\]</span></p>
+<p>and add this point to the plot …</p>
+<div style="text-align:center">
+<p><img src="Week_11a_fig5.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Now let’s consider the second wheel. In this case the 12.5% change in actual probability from 50% to 37.5% felt small. This means that the subjective probability of 50% and 37.5% should be close together.</p>
+<p>In addition, we know that the subjective probability of 37.5% should be higher than the subjective probability of 12.5% from the last wheel.</p>
+<p>I’m going to capture these two feature by saying</p>
+<ol type="1">
+<li>the subjective probability of 37.5% is 0.35, <span class="math inline">\(\pi(p_i = 0.375) = 0.35\)</span>
+<ul>
+<li>higher than the subjective probability of 12.5%</li>
+</ul></li>
+<li>and the subjective probability of 50% is 0.42, <span class="math inline">\(\pi(p_i = 0.5) = 0.42\)</span>
+<ul>
+<li>small change in subjective probability from 37.5% to 50%</li>
+</ul></li>
+</ol>
+<blockquote>
+<p><em>Note that the numbers here are for illustrative purposes only, when you sketch the subjective probability curve for the assignments you don’t need specific numbers, <strong>it’s the shape the matters</strong></em></p>
+</blockquote>
+<p>Putting these points on the curve I get …</p>
+<div style="text-align:center">
+<p><img src="Week_11a_fig6.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>For the third wheel the change in probability from 100% to 87.5% felt big again so we need a large change in subjective probability on the right hand side of the plot. In addition, we know that the subjective probability of 87.5% must be higher than the subjective probability of 50%. Remember also that we assumed the subjective probability of 100% is just 1, so we only need to add a point for the subjective probability of 87.5%. I will assume this is 0.67 …</p>
+<p><span class="math display">\[\pi(p_i = 0.875) = 0.67\]</span></p>
+<p>Adding this point to the plot I get …</p>
+<div style="text-align:center">
+<p><img src="Week_11a_fig7.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Let’s get the overall shape of the subjective probability curve by connecting all of these points with a smooth line …</p>
+<div style="text-align:center">
+<p><img src="Week_11a_fig8.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Finally, I’m going to add one more line to the plot. This is the line <span class="math inline">\(x = y\)</span>. This line represents what the subjective probability <em>would</em> be, if people we perfect at probabilities.</p>
+<div style="text-align:center">
+<p><img src="Week_11a_fig9.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>This last line allows us to see the <strong>two key features of the subjective probability curve</strong>.</p>
+<p>Feature 1: People tend to overweight small probabilities. That is the subjective probability of small probabilities is <em>higher</em> than the true Probability</p>
+<p><span class="math display">\[\pi(p_i) &gt; p_i \quad \mbox{for small } p_i\]</span></p>
+<p>Feature 2: People tend to underweight large Probabilities</p>
+<p><span class="math display">\[\pi(p_i) &lt; p_i \quad \mbox{for large } p_i\]</span></p>
+<p>On the plot, these two features can be added like this …</p>
+<div style="text-align:center">
+<p><img src="Week_11a_fig10.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>This is the shape of the subjective probability curve for Prospect Theory.</p>
+<h3 id="reference-points-in-the-subjective-probability-curve">Reference points in the subjective probability curve</h3>
+<p>Note that, just as we could understand much of the shape of the Utility curve in terms of reference points. We can also understand the shape of the Subjective Probability curve in terms of reference points.</p>
+<p>In particular, the two reference points in this curve are at probability 0 and probability 1. Note that as we move away from either of these points, the curve gets less steep. Exactly like it did for the <em>one</em> reference point (gain = 0) for the Utility curve.</p>
+<h2 id="the-two-curves-for-prospect-theory">The two curves for Prospect Theory</h2>
+<p>Along with the Utility Curve, it forms the basis of the theory.</p>
+<div style="text-align:center">
+<p><img src="Week_11a_12.png"
+     alt=""
+     width=45%
+      /> <img src="Week_11a_13.png"
+     alt=""
+     width=45%
+      /></p>
+</div>
+<p>Finally, and this is entirely optional, if you are a math junky the equation people often use for subjective probability is</p>
+<p><span class="math display">\[\pi(p) = \frac{p^\gamma}{(p^\gamma + (1-p)^\gamma)^{1/\gamma}}\]</span></p>
+<p>where <span class="math inline">\(\gamma\)</span> is a number between 0.5 and 1.</p>
+</body>
+</html>

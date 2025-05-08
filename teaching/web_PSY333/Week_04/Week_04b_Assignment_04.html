@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSY 333 — Assignment 4</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  /*
+   * I add this to html files generated with pandoc.
+   171     5    32
+  139    11    41
+  107    17    49
+   76    23    58
+   44    29    66
+   12    35    75
+  
+   171     5    32
+  185    36    32
+  199    66    32
+  213    97    31
+  227   127    31
+  241   158    31
+  
+  171     5    32
+  194    56    32
+  218   107    31
+  241   158    31
+   */
+  
+  html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    color: black;/*#444;*/
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1em;
+    margin: auto;
+    max-width: 42em;
+    background: #fefefe;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 125%;
+    /*margin-top: 2em;*/
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: rgb(171,5,32);
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: rgb(194,56,32);
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    color: rgb(218,107,31);
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    color: rgb(241,158,31);
+    font-size: 1.1em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.9em;
+  }
+  
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PSY 333 — Assignment 4</h1>
+</header>
+<p><em>To answer the questions, please copy and paste them into Word (or some other text editor) and type out your answers. Then please upload your document to the Assignment dropbox on D2L by the due date.</em></p>
+<p>Due date: <strong>Next Tuesday by midnight</strong>. If your assignment is late let us know and we can work something out.</p>
+<h2 id="representativeness-and-randomness">Representativeness and Randomness</h2>
+<h3 id="part-1-google-sheets-5-points">Part 1: Google Sheets (5 points)</h3>
+<p>In the first part of this Assignment you are going to play with real data from the coin tossing experiment you performed in class. The goal is to generate two histograms, one summarizing the responses of the class and the other summarizing actual random behavior. In Part 2, you will talk about the differences between these histograms.</p>
+<p>In this experiment I asked you to imagine tossing a coin 9 times and report the outcomes (e.g. Heads on first toss, Tails on second etc …). The results of this experiment are available in this Google Sheet (<strong>note this sheet is read only so you will have to copy and paste into your own Google or Excel spreadsheet</strong>).</p>
+<blockquote>
+<p><a href="https://docs.google.com/spreadsheets/d/1JBbVN4u1Kc2A29uMNO7uMzwKB1wfYHAGptIiN93f7nk/edit?usp=sharing">LINK TO GOOGLE SHEET</a></p>
+</blockquote>
+<p>Your data is on the page called “YourData”. In this spreadsheet, each person’s response is on a separate row and the tosses of each coin are in each column. So the responses of the first person look like this, where 1 means Heads and 0 means Tails.</p>
+<div style="text-align:center">
+<p><img src="Week_04_assignment1.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>So person one said there would be 5 heads and 4 tails.</p>
+<ol type="1">
+<li><p>Copy and paste all the values from the “YourData” page into your own spreadsheet.</p></li>
+<li><p>Compute the total number of Heads each person reported by using the SUM function in Google Sheets. Specifically in Cell J2 write</p></li>
+</ol>
+<blockquote>
+<p>= SUM(A2:I2)</p>
+</blockquote>
+<ol start="3" type="1">
+<li>Copy this formula down the column by selecting cell J2 and double clicking the little blue square at the bottom right of cell J2</li>
+</ol>
+<div style="text-align:center">
+<p><img src="Week_04_assignment2.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<ol start="4" type="1">
+<li><p>Now we’re going to make a histogram of the Number of Heads the class reported. To do this:</p>
+<ul>
+<li>select all of column J (you can do this by clicking on the letter J at the top of the column)</li>
+<li>Go to the “Insert” Menu at the top and click “Chart”. A simple histogram should appear in the spreadsheet.</li>
+<li>To clean up the appearance of this histogram, click “CUSTOMIZE” on the Chart editor window that should have popped up.</li>
+</ul>
+<div style="text-align:center">
+<p><img src="Week_04_assignment3.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<ul>
+<li>Then click on the “Histogram” tab and set the “Bucket size” to 1</li>
+</ul>
+<div style="text-align:center">
+<p><img src="Week_04_assignment4.png"
+     alt=""
+     width=50%
+      /></p>
+</div>
+<ul>
+<li>Then click on the “Horizontal axis” tab and set the minimum value to 0 and the maximum value to 9</li>
+<li>You should now have a nice histogram. Save it by clicking on the three dots on the Figure and “Save Image”</li>
+</ul>
+<div style="text-align:center">
+<p><img src="Week_04_assignment5.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<ul>
+<li>Make a word document and paste in your histogram.</li>
+</ul></li>
+<li><p>Repeat steps 1 to 4 for the “RandomNumbers” page. This page looks similar to the “YourData” page. The only difference is that the Heads and Tails are actually random. Once you’ve made your histogram, paste it into your word document and compare with the histogram from YourData.</p></li>
+</ol>
+<h3 id="part-2-writing-5-points">Part 2: Writing (5 points)</h3>
+<ol type="1">
+<li><p>What is the Law of Small Numbers?</p></li>
+<li><p>What is the difference between the two histograms you made in Part 1? Why is this an example of the Law of Small Numbers?</p></li>
+<li><p>Describe a real-world example where the Law of Small Numbers might lead us to wrong conclusions. You can talk about the examples we covered in class or come up with an example of your own.</p></li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSY 333 — Week 4, Class 1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  /*
+   * I add this to html files generated with pandoc.
+   171     5    32
+  139    11    41
+  107    17    49
+   76    23    58
+   44    29    66
+   12    35    75
+  
+   171     5    32
+  185    36    32
+  199    66    32
+  213    97    31
+  227   127    31
+  241   158    31
+  
+  171     5    32
+  194    56    32
+  218   107    31
+  241   158    31
+   */
+  
+  html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    color: black;/*#444;*/
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1em;
+    margin: auto;
+    max-width: 42em;
+    background: #fefefe;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 125%;
+    /*margin-top: 2em;*/
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: rgb(171,5,32);
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: rgb(194,56,32);
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    color: rgb(218,107,31);
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    color: rgb(241,158,31);
+    font-size: 1.1em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.9em;
+  }
+  
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PSY 333 — Week 4, Class 1</h1>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#weird-properties-of-random-numbers-1">Weird properties of random numbers 1</a><ul>
+<li><a href="#survey-results-what-do-you-think-randomness-looks-like">Survey results — what do you think randomness looks like?</a></li>
+<li><a href="#real-world-cases-of-the-law-of-small-numbers">Real world cases of the Law of Small Numbers</a><ul>
+<li><a href="#height">Height</a></li>
+<li><a href="#cancer-clusters">Cancer clusters</a></li>
+<li><a href="#test-scores-and-school-size">Test scores and school size</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<iframe src="https://arizona.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=1bbf86b5-cfa1-4e0c-acb2-ac2401306039&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+</iframe>
+<h1 id="weird-properties-of-random-numbers-1">Weird properties of random numbers 1</h1>
+<p>Last week we studied the Representativeness Heuristic, which shows how people can be biased towards what the believe to be “representative” examples of a category. We saw how this heuristic works well in some cases, but how it can lead us badly astray when our representative examples are wrong.</p>
+<p>This week we will show how the Representativeness Heuristic can also mess with our understanding of random numbers.</p>
+<h2 id="survey-results-what-do-you-think-randomness-looks-like">Survey results — what do you think randomness looks like?</h2>
+Last week I asked you to generate a series of 9 imaginary coin tosses on this survey …
+<div style="text-align:center">
+<p><img src="Week_04a_survey.png"
+     alt=""
+     width=50%
+      /></p>
+</div>
+<p>Here are the results. In this plot, I’m plotting the people on the x-axis and toss number on the y-axis, heads are coded in yellow and tails in blue. So the rectangle in the top left corner corresponds to the first imaginary coin toss of the first person to complete the survey. In this case the rectangle is yellow so they said heads.</p>
+<div style="text-align:center">
+<p><img src="Week_04a_1.png"
+     alt=""
+     width=100%
+      /></p>
+</div>
+<p>So are these coin tosses <em>actually</em> random? Well, you can already get a hint that they might not be by looking at the top row (toss number 1). This row is mostly yellow which means that most people said heads for the first coin toss. This is not at all how a real coin would behave!</p>
+<p>We can get a much better idea by counting the total number of heads and tails that each person reported. These results are plotted in the histogram below … this shows that 5 heads (out of 9) was the most popular option, followed by 4 and the 7. Only a few people reported any other numbers of heads.</p>
+<div style="text-align:center">
+<p><img src="Week_04a_2.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Now we can compare this distribution of numbers of heads to what we’d expect from a fair coin. To get this I turned to <a href="https://en.wikipedia.org/wiki/Binomial_distribution">some math</a> that allows me to compute <em>exactly</em> what this distribution should be for a fair coin. As you can see there are some differences between your distribution and a truly random one …</p>
+<div style="text-align:center">
+<p><img src="Week_04a_3.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Note that the difference here isn’t in the position of the peak of this distribution — both the true distribution and your distribution put the maximum at 4 or 5 heads. Instead it’s in the <em>tails</em> of the distribution.</p>
+<p>Real random coin tosses, especially when there are only a small number of coin tosses, are more likely to have low and high numbers of heads than “random” coin tosses that are generated by people.</p>
+<p><em>People tend to underestimate the variability in small samples</em></p>
+<p>This psychological phenomenon is called the <strong><em><a href="http://psychology.iresearchnet.com/social-psychology/decision-making/law-of-small-numbers/#:~:text=The%20law%20of%20small%20numbers,at%20all%2C%20but%20a%20fallacy.">Law of Small Numbers</a></em></strong>, in contrast to the mathematical phenomenon called the law of large numbers (see below).</p>
+<div style="text-align:center">
+<p><img src="Week_04a_7.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Why do people underestimate the variability of small samples? One answer is that they are using the Representativeness Heuristic.</p>
+<p>In particular, when I ask you imagine 9 “random” coin tosses, instead of reporting something which could happen (e.g. 7 tails and 2 heads), you report something that is <em>representative</em> of what you think randomness looks like. For a fair coin, this is roughly equal amounts of heads and tails.</p>
+<p>If you’d tossed more coins, your distribution over the <em>fraction</em> of heads would have been closer to the truth. This is because when you have a large number of tosses of a fair coin, then it’s hard for the <em>fraction</em> of heads to get far from 50%, this is because of a mathematical fact (the <a href="https://en.wikipedia.org/wiki/Law_of_large_numbers">law of large numbers</a>).</p>
+<div style="text-align:center">
+<p><img src="Week_04a_8.png"
+     alt=""
+     width=60%
+      /></p>
+</div>
+<!--
+To get an intuition for how increasing the number makes it harder to more away from 50%, first consider just one coin toss.  The outcome of this is either heads or tails, and so the fraction of heads is either 0 or 1.  With one coin you can't even get 50% heads!
+
+Next think about 2 coin tosses.  If you get HT or TH that's 50% heads, but you only need to flip a T to H (50% probability) and you get 100% heads. Similarly you can easily get 0% heads by flipping the H to T.
+
+Now imagine 10 coin tosses.  To get to 100% heads is now quite unlikely, you need 10 H in a row.
+-->
+<h2 id="real-world-cases-of-the-law-of-small-numbers">Real world cases of the Law of Small Numbers</h2>
+<p>Now, the above stuff about coin tossing might seem like a kind of mathematical party trick, fun to think about but kind of irrelevant for the real world. But it turns out the same problem arises in many real world data sets.</p>
+<h3 id="height">Height</h3>
+<p>Before we consider actual real world cases, let’s consider an artificial one. Let’s imagine three groups of people (randomly selected from the population)</p>
+<ul>
+<li>Group 1 has 10 people</li>
+<li>Group 2 has 100 people</li>
+<li>Group 3 has 1000 people</li>
+</ul>
+<p>Which group is more likely to have an average height over six feet? Which group is more likely to have an average height under five feet?</p>
+<p>The answer to <em>both</em> question is Group 1. Because it has the smallest number of people the variability in the average height will be higher.</p>
+<p>Another way of saying that, is that you only need 2 or 3 tall people in Group 1 to push the average way up. But you’d need 20 or 30 tall people in Group 2, and 200 or 300 in Group 3, to get a similar change in average height.</p>
+<p>Conversely, if you had just 2 or 3 shorter than average people in Group 1 your average would be low.</p>
+<p>This is <em>exactly</em> the same reasoning as the coin example, although the intuition can be hard to get. Random numbers are weird and our intuitions about them tend to be bad (in part because of the Representativeness Heuristic).</p>
+<h3 id="cancer-clusters">Cancer clusters</h3>
+<p>Now let’s look at a real-world case. Take a look at this map of areas with the highest rates of kidney cancer in the US. Looking at these you might notice that they are largely rural and in Republican areas of the country.</p>
+<div style="text-align:center">
+<p><img src="Week_04a_9.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>From those observations you could very easily come up with some story about how there are some health risks in these areas, perhaps due to local political decisions about the environment etc …</p>
+<p>But you would be wrong. Why? Because a glance at the areas with the <em>lowest</em> incidence of kidney cancer shows that these too are in largely rural and Republican areas.</p>
+<div style="text-align:center">
+<p><img src="Week_04a_10.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>What’s actually driving this effect is the Law of Small numbers. The counties that show up as having especially high or especially low rates of kidney cancer are the ones with <em>low populations</em>. And like the group of 10 people in the height example, there’s more variability in these areas with small numbers of people.</p>
+<p>Again it’s the <em>exact</em> same reasoning as the coin example and an example of the Law of Small Numbers. Small groups have large variance and people do not account for this because their “representative” examples of randomness are not correct.</p>
+<h3 id="test-scores-and-school-size">Test scores and school size</h3>
+<p>Do big schools or small schools deliver a better education? This is a huge question in education and something that many parents take into account when deciding where their kids should go to school.</p>
+<p>One way (the wrong way) to address this question is to look at the sizes of the schools with the best average test scores and see if these are large schools or small schools. These top scoring schools are shown in red below …</p>
+<div style="text-align:center">
+<p><img src="Week_04a_12.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>These top scoring schools tend to be on the smaller than average, so from this we would conclude that smaller schools are better than larger schools. Indeed, intuitions like this can become political very quickly and politicians can propose things like closing big schools in favor of more smaller schools.</p>
+<p>However, what I’ve not shown you yet is the lowest scoring schools. How big are those schools? Well, ask you can see below the lowest scoring schools are <em>also</em> small. In fact the school with the lowest scores of all is one with about 50 students.</p>
+<div style="text-align:center">
+<p><img src="Week_04a_13.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Why? It’s the Law of Small Numbers yet again. Small schools, by definition, have smaller numbers of students and so we’d expect more variability in their average test scores simply by chance.</p>
+<p>On this measure, at least, there’s no effect of school size on the quality of education.</p>
+</body>
+</html>

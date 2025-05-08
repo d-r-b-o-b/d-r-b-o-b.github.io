@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSY 333 — Week 4, Class 2</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  /*
+   * I add this to html files generated with pandoc.
+   171     5    32
+  139    11    41
+  107    17    49
+   76    23    58
+   44    29    66
+   12    35    75
+  
+   171     5    32
+  185    36    32
+  199    66    32
+  213    97    31
+  227   127    31
+  241   158    31
+  
+  171     5    32
+  194    56    32
+  218   107    31
+  241   158    31
+   */
+  
+  html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    color: black;/*#444;*/
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1em;
+    margin: auto;
+    max-width: 42em;
+    background: #fefefe;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 125%;
+    /*margin-top: 2em;*/
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: rgb(171,5,32);
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: rgb(194,56,32);
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    color: rgb(218,107,31);
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    color: rgb(241,158,31);
+    font-size: 1.1em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.9em;
+  }
+  
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PSY 333 — Week 4, Class 2</h1>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#weird-properties-of-random-numbers-2">Weird properties of random numbers 2</a><ul>
+<li><a href="#a-game-with-random-numbers">A game with random numbers</a></li>
+<li><a href="#flight-school">Flight school</a></li>
+<li><a href="#test-scores">Test scores</a></li>
+</ul></li>
+</ul>
+</nav>
+<iframe src="https://arizona.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=f13360e3-eca1-4916-9d62-ac2401303be5&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+</iframe>
+<h1 id="weird-properties-of-random-numbers-2">Weird properties of random numbers 2</h1>
+<p>Last time we saw how people can make bad judgments about random numbers. This is because their “representation” of what random numbers should look like is wrong. In particular, we showed how people underestimate the variability in small samples of random numbers. We also showed that this can have real-world implications for the judgments we make about things like cancer clusters and school size.</p>
+<p>Today we will investigate another way in which people’s intuitions about random numbers go awry because their representations of random numbers are flawed.</p>
+<h2 id="a-game-with-random-numbers">A game with random numbers</h2>
+<p>This example works better in a group demonstration and I will try it again in the Zoom for this class. However, I want to have it in the notes so you can refer back to it later. If it doesn’t make total sense on your first read through, hopefully it will make more sense after class.</p>
+<p>This game is all about generating random numbers. To start, please do a Google search for</p>
+<blockquote>
+<p><code>random number</code></p>
+</blockquote>
+<p>This should give you a tool like this, which allows you to generate a random number between 1 and 10.</p>
+<div style="text-align:center">
+<p><img src="Week_04b_1.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Please generate a random number.</p>
+<!--
+If you got a high score, do you think you could do it again?  If you got a low score, do you think you could improve?
+
+Do you think, if you played a second time, what you got on the second play would depend at all on what you got on the first play?
+
+Hopefully your answer to the last question is "of course not," they are just random numbers and the next play shouldn't depend on the outcome of the last play.  That's correct, and hopefully it's obvious,
+-->
+<blockquote>
+<p><em>If you scored 8 or higher, you are a WINNER! Congratulations! You must be really great at generating random numbers. Now generate another one. What did you get? Hopefully you didn’t let me down … if you did you are just proving that positive reinforcement doesn’t work.</em></p>
+</blockquote>
+<blockquote>
+<p><em>If you scored 3 or lower, you are a LOSER! I can’t believe you could do so badly at generating a random number! Now generate another one and do a better job this time. What did you get now? Hopefully you improved … if you did, you are proving that negative reinforcement does work.</em></p>
+</blockquote>
+<p>Of course, the above two statements are crazy! Please don’t take them literally! I promise none of you are losers!</p>
+<p>The point of this game is to illustrate a phenomenon known as “Regression to the Mean.” This is where abnormally high or abnormally low numbers tend to average out in the long run.</p>
+<p>In this example, it’s clear that the number you get on the second play should be totally unrelated to the number you get on the first play. So the average on the second play will be 5.5 (average of numbers from 1 to 10).</p>
+This is illustrated in a simulated example below (with thousands of random numbers).
+<div style="text-align:center">
+<p><img src="Week_04b_4.png"
+     alt=""
+     width=60%
+      /></p>
+</div>
+<p>For the first round winners, their average on the first round is 9. This is not surprising since we defined these winners as having a score of 8 or more. Their average appears to “get worse” on the second round, but that’s only because they are “regressing to the mean” on the second round.</p>
+<p>For the first round losers, their average on the first round is 2. Again this is not surprising. Their average appears to “get better” on the second round, but that’s also only because they are “regressing to the mean” on the second round.</p>
+<p>Hopefully this example seems trivial. But as we shall see, when regression to the mean crops up in the real world it can fool even the smartest of us …</p>
+<!--
+What you've just done is an example that I like to do live in an in-person class.  When we do this in a crowded lecture theatre, we're virtually guaranteed to get several "winners" and "losers" every time.
+
+But when the winners play again, they do worse on average than they did the first time.  This is not surprising because it's a random number and the second time their average will be around 5 (here's a simulation)
+
+<div style="text-align:center">
+<img src="Week_04b_2.png"
+     alt=""
+     width=80%
+      />
+</div>
+
+And when the losers play again, they do better, again because their average is around 5
+
+
+
+<div style="text-align:center">
+<img src="Week_04b_3.png"
+     alt=""
+     width=80%
+      />
+iv>
+
+
+
+
+At this point you're probably wondering what I'm going on about.  Aren't all the numbers random?  There surely can't be any actual skill involved.
+
+
+## Regression to the mean
+According to [Lee and Smith](https://onlinelibrary.wiley.com/doi/abs/10.1002/bdm.418?casa_token=_UYFGcAJdiYAAAAA:yZ3AHI66_gL0s68YSm35O0FnprMfeQ4UU4SVDGmu7Ms96yATl4evLakGjii3wctg3OBFZNGyskq6j3A)
+
+> _There are few statistical facts more interesting than regression to the mean for two reasons:_
+
+> _First, people encounter it almost every day of their lives._
+
+> _Second, almost nobody understands it._
+
+> _The coupling of these two reasons makes regression to the mean one of the most fundamental sources of error in human judgment, producing fallacious reasoning in medicine, education, government, and, yes, even sports._
+
+So what is Regression to the Mean?  First let's consider an example from Kahneman ...
+-->
+<h2 id="flight-school">Flight school</h2>
+Once upon a time, Kahneman was asked to present at a flight school for the Isreali air force. Because he was a psychologist they talked to him about their training techniques.
+<div style="text-align:center">
+<p><img src="Week_04b_5.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>The instructors claimed that</p>
+<ul>
+<li>praise after a good maneuver results in a decrease in performance on next try, perhaps because people get lazy when they are praised</li>
+<li>Conversely, punishment after a bad maneuver results in better performance</li>
+</ul>
+<p>Kahneman realized that this pattern of responses could just as easily be caused by random chance. Specifically he suggested that whether a maneuver was good or bad was purely down to luck.</p>
+<p>In that case, if good maneuvers were largely just (good) luck, then the most likely outcome on second try was worse, just by chance.</p>
+<p>Likewise if bad maneuvers were also largely (bad) luck, then the most likely outcome on second try was better.</p>
+<p>In both cases, the feedback from the instructor was irrelevant. The outcome of the maneuver was luck both times. It’s just that if, by chance you have good or bad luck the first time, the next time you will be more likely to be average, which either looks like a worsening or improvement relative to the first, random outcome.</p>
+<p>That’s not to say that instruction and feedback can’t be valuable, but that just chance could also explain the results.</p>
+<h2 id="test-scores">Test scores</h2>
+<div style="text-align:center">
+<p><img src="Week_04b_6.png"
+     alt=""
+     width=50%
+      /></p>
+</div>
+<p>Another example comes from school test scores. A key component in evaluating schools (and the principals of those schools) is whether their test scores are increasing or decreasing over time.</p>
+<p>But there’s a problem with evaluating this change because test scores are at least partially random. This means that a school could perform poorly one year just by chance, meaning that the next year it will likely get higher scores just by regressing to the mean.</p>
+<p>Likewise a school could, by chance, do great one year and then look like it failed the next year, just by regressing to the mean.</p>
+<p>Thus regression to the mean predicts that low ranked schools should be more likely to move up next year and high ranked schools should be more likely to move down. Critically, this prediction is just a property of random numbers and is completely independent of the principal or whatever else is going on in the school!</p>
+<p>If we plot the fraction of schools moving up in the ranking as a function of their initial ranking, we find support for this regression to the mean hypothesis. The lowest ranked schools have a 50% chance of moving up in the rankings next year, but the higher ranked schools have much lower chance of moving up. (Of course they very highest ranked schools can’t move up!)</p>
+<div style="text-align:center">
+<p><img src="Week_04b_8.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+<p>Looking at schools that move down (red line), we see these are more likely to be schools that were initially ranked highly. Again supporting the idea of regression to the mean.</p>
+<div style="text-align:center">
+<p><img src="Week_04b_9.png"
+     alt=""
+     width=80%
+      /></p>
+</div>
+</body>
+</html>

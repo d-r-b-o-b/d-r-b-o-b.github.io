@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSY 333 — Week 7, Class 2</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  /*
+   * I add this to html files generated with pandoc.
+   171     5    32
+  139    11    41
+  107    17    49
+   76    23    58
+   44    29    66
+   12    35    75
+  
+   171     5    32
+  185    36    32
+  199    66    32
+  213    97    31
+  227   127    31
+  241   158    31
+  
+  171     5    32
+  194    56    32
+  218   107    31
+  241   158    31
+   */
+  
+  html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    color: black;/*#444;*/
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1em;
+    margin: auto;
+    max-width: 42em;
+    background: #fefefe;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 125%;
+    /*margin-top: 2em;*/
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: rgb(171,5,32);
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: rgb(194,56,32);
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    color: rgb(218,107,31);
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    color: rgb(241,158,31);
+    font-size: 1.1em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.9em;
+  }
+  
+  </style>
+</head>
+<body>
+<header>
+<h1 class="title">PSY 333 — Week 7, Class 2</h1>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#problems-with-expected-value-theory">Problems with Expected Value Theory</a><ul>
+<li><a href="#non-monetary-decisions">Non-monetary decisions</a></li>
+<li><a href="#the-existence-of-las-vegas">The existence of Las Vegas</a><ul>
+<li><a href="#if-you-must-gamble-in-vegas">If you must gamble in Vegas</a></li>
+</ul></li>
+<li><a href="#the-st-petersburg-paradox">The St Petersburg paradox</a><ul>
+<li><a href="#human-behavior-on-the-st-petersburg-paradox-question">Human behavior on the St Petersburg paradox question</a></li>
+<li><a href="#the-expected-value-of-the-st-petersburg-paradox-game">The Expected Value of the St Petersburg paradox game</a></li>
+</ul></li>
+<li><a href="#dont-invest-your-student-loans-in-the-st-petersburg-game">Don’t invest your student loans in the St Petersburg game!</a></li>
+</ul></li>
+</ul>
+</nav>
+<iframe src="https://arizona.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=06047b84-f772-428f-8472-ac32012a3e11&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+</iframe>
+<h1 id="problems-with-expected-value-theory">Problems with Expected Value Theory</h1>
+<p>Last class I introduced you to our first quantitative theory of human decision making: Expected Value theory. This theory is a great start for a quantitative theory because it makes precise predictions about how people should behave in gambling decisions. Unfortunately, these predictions did not match experimentally observed behavior.</p>
+<p>In this class, we are going to drive a few more nails into the coffin of Expected Value theory, first by showing that it only applies to a small set of decisions, second by showing that it doesn’t explain human behavior in the real world, and third by showing that it predicts such crazy behavior that it absolutely has to be wrong.</p>
+<p>You may think that learning about a debunked theory isn’t worth it, but actually it’s the core of science. <em>Every</em> theory is wrong, but by understanding how it is wrong we can get closer to the truth.</p>
+<h2 id="non-monetary-decisions">Non-monetary decisions</h2>
+<p>With Expected Value theory, it is easy to make predictions about monetary gambles. We simply compute the expected value of each gamble and pick the one with the highest expected value.</p>
+<p>But a true theory of decision making should make predictions about how we make all kinds of decisions. For example, how about this decision where I’m choosing between a healthy salad and a tasty burger for my lunch?</p>
+<figure>
+<div style="text-align:center">
+<p><img src="Week_08a_salad.png"
+     alt="Vegas"
+     height=200px
+      /> <img src="Week_08a_burger.png"
+     alt="Vegas"
+     height=200px
+      /></p>
+</div>
+</figure>
+<p>Expected Value theory has no way to choose between options like this, where the monetary value isn’t clear. This isn’t a proof that Expected Value theory is bad, but certainly points towards it having something missing.</p>
+<h2 id="the-existence-of-las-vegas">The existence of Las Vegas</h2>
+<p>If you ever needed incontrovertible proof that Expected Value theory is a poor theory of human behavior, then the existence of Las Vegas is it.</p>
+<div style="text-align:center">
+<p><img src="Week_07b_vegas.png"
+     alt="Vegas"
+     width=80%
+      /></p>
+</div>
+<p>This is a city built on bad decisions, and bad gambling decisions in particular. As an example, let’s consider a simple bet on red in roulette.</p>
+<div style="text-align:center">
+<p><img src="Week_07b_roulette.png"
+     alt="roulette"
+     width=300px
+      /></p>
+</div>
+<p>In this wheel we have 37 possible numbers, 18 red, 18 black and 1 green. Let’s assume you place a $1 bet on red. You now have two outcomes that you care about. Either you land on red and double your money (value of winning V_1 = $2) or you land on black or green and lose (value of losing V_2 = $0).</p>
+<p>The probability of winning is</p>
+<p><span class="math display">\[p_1 = p(\mbox{red}) = \frac{18}{37} \approx 0.486\]</span></p>
+<p>The probability of losing is</p>
+<p><span class="math display">\[p_2 = p(\mbox{black}) = \frac{19}{37} \approx 0.514\]</span></p>
+<p>So your Expected Value if you choose to gamble is</p>
+<p><span class="math display">\[EV(\mbox{bet on red}) = p_1 V_1 + p_2 V_2 = 0.486 \times 2 + 0.514 \times 0 = 0.973\]</span></p>
+<p>This needs to be compared with your Expected Value if you don’t play at all</p>
+<p><span class="math display">\[EV(\mbox{don&#39;t play}) = 1\]</span></p>
+<p>because you get to keep your original dollar.</p>
+<p>So if you don’t play you get to keep a dollar, and if you do play you expect to get about 97.3 cents back. On average this means that every time you bet $1 on red you lose money and the house takes 2.7 cents, or 2.7% of your bet (a percentage known as the <em>house edge</em>).</p>
+<p>Expected Value theory says you should never play roulette and similar calculations hold for every game you can play in a casino. But of course, people do choose to gamble in Vegas, often spending considerable amounts on airfare for the privilege of doing so! So the very existence of Vegas is one in the eye for Expected Value theory (although EV theory is a great description of the behavior of the casinos!).</p>
+<h3 id="if-you-must-gamble-in-vegas">If you must gamble in Vegas</h3>
+<p>Of course, if you are determined to gamble in Vegas, there are options that are <em>less worse</em> than others. Here are the house edges for a few popular options (remember that house edge is the percent of your money you lose on average every time you play) …</p>
+<ul>
+<li>Roulette (European, one green number = 2.7%)</li>
+<li>Roulette (American , two green numbers = 5.3%)</li>
+<li>Slots (in 2012, these numbers are really hard to figure out)
+<ul>
+<li>Range from 4.73% for $100 slots to</li>
+<li>10.77% for penny slots</li>
+</ul></li>
+<li>Blackjack (assuming you know how to play) has a house edge of only 1%
+<ul>
+<li>If you’re able to count cards (and don’t get thrown out for doing so), it is possible for expert players to actually <em>gain</em> money on Blackjack sending the house edge negative</li>
+</ul></li>
+</ul>
+<p>Whatever you do though, definitely do <em>not</em> play the slot machines in the airport!</p>
+<div style="text-align:center">
+<p><img src="Week_07b_airport.png"
+     alt="VegasAirport"
+     width=80%
+      /></p>
+</div>
+<p>With a captive audience these machines are the worst option in all of Vegas with a house edge of 15%!</p>
+<h2 id="the-st-petersburg-paradox">The St Petersburg paradox</h2>
+<p>If the existence of Vegas and the results of the in-class survey aren’t enough for you, one final piece of evidence that Expected Value theory is a bad model of human decision making comes from a special decision problem known as the <a href="https://en.wikipedia.org/wiki/St._Petersburg_paradox">St Petersburg paradox</a>.</p>
+<p>The decision is deceptive simple and it’s one that I already asked you about in the survey …</p>
+<blockquote>
+<p><em>Imagine a game in which a coin is tossed repeatedly until it lands on tails once, and then you are paid <span class="math inline">\(2^k\)</span>, where <span class="math inline">\(k\)</span> equals the number of tosses until tails appeared.</em></p>
+</blockquote>
+<blockquote>
+<p><em>What’s the most you would be willing to pay to play this game?</em></p>
+</blockquote>
+<p>So in this game I toss a coin over and over again until it comes up tails when the game ends. I then count how many times I tossed the coin in this game, <span class="math inline">\(k\)</span>, and I pay you 2 raised to the power of <span class="math inline">\(k\)</span> dollars.</p>
+<p>So in one game you might see heads on the first throw, heads on the second throw and tails on the third throw. I can represent this game as</p>
+<blockquote>
+<p>HHT</p>
+</blockquote>
+<p>If you saw this, the game would have lasted <span class="math inline">\(k = 3\)</span> coin tosses and you would earn <span class="math inline">\(2^k = 2^3 = 8\)</span> dollars.</p>
+<p>Let’s consider a few other possible games …</p>
+<table style="width:65%;">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Coin toss result</th>
+<th style="text-align: center;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">$2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">HT</td>
+<td style="text-align: center;">$4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">HHT</td>
+<td style="text-align: center;">$8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">HHHT</td>
+<td style="text-align: center;">$16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">HHHHT</td>
+<td style="text-align: center;">$32</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">HHHHHT</td>
+<td style="text-align: center;">$64</td>
+</tr>
+</tbody>
+</table>
+<h3 id="human-behavior-on-the-st-petersburg-paradox-question">Human behavior on the St Petersburg paradox question</h3>
+<p>The question for this game asks about the <em>most</em> you would be willing to pay to play this game. The plot below shows the results of the survey.</p>
+<div style="text-align:center">
+<p><img src="Week_07b_survey.png"
+     alt="StPetersburg_results"
+     width=80%
+      /></p>
+</div>
+<p>On the x-axis I’m plotting each person (so point 1 on the x-axis corresponds to person 1, point 100 to person 100 etc …) and on the y-axis the amount that person was willing to pay to play the game. To make it easier to visualize, I ordered people by how much they were willing to pay, so people on the left are paying the least (the minimum is 50 cents) and on the right people are paying the most (the maximum is $1000).</p>
+<p>The average is about $10. As we will see in a moment, this <em>vastly</em> underestimates the Expected Value of the game …</p>
+<h3 id="the-expected-value-of-the-st-petersburg-paradox-game">The Expected Value of the St Petersburg paradox game</h3>
+<p>If you are using Expected Value theory to decide the maximum you’d be willing to pay to play the game, then you first need to compute the Expected Value of the game. Then the maximum you’d be willing to pay should be just underneath Expected Value, so that you will (on average) gain money by paying that amount to play the game.</p>
+<p>So what’s the Expected Value of the St Petersburg paradox game. To compute this, let’s start with the equation for Expected Value and expand out the sum …</p>
+<p><span class="math display">\[EV = \sum_i p_i V_i = p_1 V_1 + p_2 V_2 + p_3 V_3 + ...\]</span></p>
+<p>where the <span class="math inline">\(...\)</span> means keep going until you’ve considered all possible outcomes of the St Petersburg game.</p>
+<p>So what are the possible outcomes of the game?</p>
+<ul>
+<li>The first possible outcome is that we toss a coin and get tails (T). In this case we earn <span class="math inline">\(V_1 = 2\)</span> and this outcome occurs with probability <span class="math inline">\(p_1 = 0.5\)</span> (because there’s a 50% chance of getting tails.)</li>
+<li>The second possible outcome is that we get heads on the first toss and tails on the second (HT). In this case we earn <span class="math inline">\(V_2 = 4\)</span>. The probability of this outcome is <span class="math inline">\(p_2 = 0.25\)</span> because there’s a 50% chance of getting heads on the first toss and a 50% chance of getting tails on the second toss so <span class="math inline">\(p_2 = 0.5 \times 0.5 = 0.25\)</span>.</li>
+<li>The third possible outcome is HHT with value <span class="math inline">\(V_3 = 8\)</span> and probability <span class="math inline">\(0.125 = 0.5 \times 0.5 \times 0.5\)</span>.</li>
+</ul>
+<p>Putting these into the equation, we see something interesting start to happen …</p>
+<p><span class="math display">\[\begin{equation}
+\begin{split}
+  EV &amp;= 0.5 &amp;\times 2 &amp;+ 0.25 &amp;\times 4 &amp;+ 0.125 &amp;\times 8 &amp;+ p_4 V_4 + ... \\
+     &amp;=     &amp; 1       &amp;+      &amp; 1       &amp;+       &amp; 1       &amp;+ p_4 V_4 + ...
+\end{split}
+\end{equation}\]</span> The first three terms in this sum are all one. In fact, if we keep going, we will find that <em>all</em> the terms in this sum are 1.</p>
+<p>Why? Let’s consider the value of the <span class="math inline">\(k\)</span>th outcome. By the rules of the game, this is <span class="math inline">\(V_k = 2^k\)</span>.</p>
+<p>Now let’s consider the probability of the <span class="math inline">\(k\)</span>th outcome. To get a game of length <span class="math inline">\(k\)</span> you need to toss <span class="math inline">\(k-1\)</span> heads and then one tail. The probability of getting <span class="math inline">\(k-1\)</span> heads is</p>
+<p><span class="math display">\[\frac{1}{2^{k-1}}\]</span> and he probability of getting one tail is just one half. So the probability of getting <span class="math inline">\(k-1\)</span> heads AND one tail is</p>
+<p><span class="math display">\[p_k = \frac{1}{2^k}\]</span></p>
+<p>So the <span class="math inline">\(k\)</span>th term in the sum is</p>
+<p><span class="math display">\[p_k V_k = \frac{1}{2^k} \times 2^k = 1\]</span></p>
+<p>So every term in the sum is 1.</p>
+<p>How many terms are there in the sum? It’s actually infinite, there are <span class="math inline">\(\infty\)</span> terms in the sum. To see this consider this tree of possible outcomes.</p>
+<div style="text-align:center">
+<p><img src="Week_07b_st.png"
+     alt="StPetersburg"
+     width=80%
+      /></p>
+</div>
+<p>On each toss you can get tails and end the game or heads and keep going. But it’s always possible to get a head on every coin toss so it’s <em>always</em> possible to keep going with the game (although it becomes incredibly unlikely).</p>
+<p>So if there are infinitely many terms in the sum and all of the terms are 1, this means the Expected Value of the St Petersburg paradox is infinite!</p>
+<p><span class="math display">\[EV(\mbox{St Petersburg}) = \infty\]</span></p>
+<p>Infinity is really big and can be hard to get your head around. But this prediction about human behavior from Expected Value theory is really crazy. To put it in perspective, Infinite Expected Value says that the class average answer of $10 to play the game is a total bargin. Even $1000, which was the largest answer anyone gave in the class, is a bargin to play this game.</p>
+<p>Expected Value theory says you should take out loans to play this game. Seriously, this crazy theory of decision making says that playing this game is a better investment for your tuition dollars than a college degree!</p>
+<p>Even a billion dollars is a bargin to play the St Petersburg game. Oprah Winfrey should be willing to spend her entire fortune on it. So should Kylie Jenner and Jeff Bezos and Elon Musk. The government should put the entire 4.79 trillion dollar national budget into this game, just think what you could with <span class="math inline">\(\$\infty\)</span>!</p>
+<h2 id="dont-invest-your-student-loans-in-the-st-petersburg-game">Don’t invest your student loans in the St Petersburg game!</h2>
+<p>Seriously. Expected Value theory is a terrible theory of human decision making. But by tweaking a little bit, next week we will get a little closer to the truth …</p>
+</body>
+</html>

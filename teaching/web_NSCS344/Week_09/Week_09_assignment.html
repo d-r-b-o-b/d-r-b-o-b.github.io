@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB R2020a"><title>NSCS 344, Week 9</title><style type="text/css">.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(213, 80, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: left;  }
+.S1 { margin: 15px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(213, 80, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: left;  }
+.S2 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+.S3 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 20px; min-height: 0px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
+.S4 { margin: 10px 0px 20px; padding-left: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px;  }
+.S5 { margin-left: 56px; line-height: 21px; min-height: 0px; text-align: left; white-space: pre-wrap;  }
+.S6 { border-left: 0px none rgb(0, 0, 0); border-right: 0px none rgb(0, 0, 0); border-top: 0px none rgb(0, 0, 0); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 0px; line-height: 16px; min-height: 16px; white-space: pre; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;  }</style></head><body><div class = rtcContent><h1  class = 'S0'><span>NSCS 344, Week 9</span></h1><h1  class = 'S1'><span>Assignment 9: Maximum likelihood model fitting</span></h1><div  class = 'S2'><span style=' font-weight: bold;'> *** Due date: Start of class in Week 10 ***</span></div><div  class = 'S2'><span></span></div><h2  class = 'S3'><span>Part 1: Compute the log-likelihood for one value of sigma (4 points)</span></h2><ul  class = 'S4'><li  class = 'S5'><span>Follow along with the notes to write a script that computes the log likelihood for one value of sigma</span></li><li  class = 'S5'><span>Convert that script into a function that can compute the log likelihood for any value of sigma</span></li></ul><h2  class = 'S3'><span>Part 2: Compute the posterior (4 points)</span></h2><ul  class = 'S4'><li  class = 'S5'><span>Use your function to compute the log-likelihood for a bunch of different sigma values</span></li><li  class = 'S5'><span>Plot the log-likelihood vs sigma</span></li><li  class = 'S5'><span>Convert your log-likelihood into a posterior distribution</span></li><li  class = 'S5'><span>Plot the posterior as a function of sigma</span></li></ul><h2  class = 'S3'><span>Part 3: Compute the posterior for subject number 2 (2 points)</span></h2><div  class = 'S2'><span>One advantage of the Bayesian approach is that it works nicely with small amounts of data.  In these cases your resulting distribution over sigma is usually wider - reflecting the increased uncertainty that comes with less data.  In this part we're going to compute the posterior for just one participant - participant number 2.</span></div><ul  class = 'S4'><li  class = 'S5'><span>Compute and plot the posterior for subject number 2.  You can get this person's data using </span></li></ul><div class = 'preformatted-matlab' style = 'margin: 10px 3px 10px 55px; padding: 10px 10px 10px 5px; '><div  class = 'S6'><span style="white-space: pre;"><span>rsk(2,:)</span></span></div></div><ul  class = 'S4'><li  class = 'S5'><span>What's (roughly) the best fitting value of sigma for this person?  How uncertain is the model about this estimate?</span></li></ul><h2  class = 'S3'><span>Part 4: Compute the posterior for more subjects (2 extra credit points)</span></h2><ul  class = 'S4'><li  class = 'S5'><span>Compute the posterior for a bunch more subjects (10 or more) and plot these posteriors o on the same figure.  </span></li><li  class = 'S5'><span>Some of these posteriors will likely be very wide indeed (e.g. subject number 1) and usually these are for participants with large sigma values.  Why is the model more uncertain about the value of sigma when it is large?</span></li></ul></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+%% NSCS 344, Week 9
+%% Assignment 9: Maximum likelihood model fitting
+% **** Due date: Start of class in Week 10 ****
+% 
+% 
+%% Part 1: Compute the log-likelihood for one value of sigma (4 points)
+%% 
+% * Follow along with the notes to write a script that computes the log likelihood 
+% for one value of sigma
+% * Convert that script into a function that can compute the log likelihood 
+% for any value of sigma
+%% Part 2: Compute the posterior (4 points)
+%% 
+% * Use your function to compute the log-likelihood for a bunch of different 
+% sigma values
+% * Plot the log-likelihood vs sigma
+% * Convert your log-likelihood into a posterior distribution
+% * Plot the posterior as a function of sigma
+%% Part 3: Compute the posterior for subject number 2 (2 points)
+% One advantage of the Bayesian approach is that it works nicely with small 
+% amounts of data.  In these cases your resulting distribution over sigma is usually 
+% wider - reflecting the increased uncertainty that comes with less data.  In 
+% this part we're going to compute the posterior for just one participant - participant 
+% number 2.
+%% 
+% * Compute and plot the posterior for subject number 2.  You can get this person's 
+% data using 
+%%
+% 
+%   rsk(2,:)
+%
+%% 
+% * What's (roughly) the best fitting value of sigma for this person?  How uncertain 
+% is the model about this estimate?
+%% Part 4: Compute the posterior for more subjects (2 extra credit points)
+%% 
+% * Compute the posterior for a bunch more subjects (10 or more) and plot these 
+% posteriors o on the same figure.  
+% * Some of these posteriors will likely be very wide indeed (e.g. subject number 
+% 1) and usually these are for participants with large sigma values.  Why is the 
+% model more uncertain about the value of sigma when it is large?
+##### SOURCE END #####
+--></body></html>

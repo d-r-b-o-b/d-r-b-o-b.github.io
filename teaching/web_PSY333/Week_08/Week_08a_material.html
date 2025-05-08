@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSY 333 — Week 8, Class 1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  /*
+   * I add this to html files generated with pandoc.
+   171     5    32
+  139    11    41
+  107    17    49
+   76    23    58
+   44    29    66
+   12    35    75
+  
+   171     5    32
+  185    36    32
+  199    66    32
+  213    97    31
+  227   127    31
+  241   158    31
+  
+  171     5    32
+  194    56    32
+  218   107    31
+  241   158    31
+   */
+  
+  html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    color: black;/*#444;*/
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1em;
+    margin: auto;
+    max-width: 42em;
+    background: #fefefe;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 125%;
+    /*margin-top: 2em;*/
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: rgb(171,5,32);
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: rgb(194,56,32);
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    color: rgb(218,107,31);
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    color: rgb(241,158,31);
+    font-size: 1.1em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.9em;
+  }
+  
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PSY 333 — Week 8, Class 1</h1>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#expected-utility-theory-1">Expected Utility Theory 1</a><ul>
+<li><a href="#utility">Utility</a></li>
+<li><a href="#utility-also-applies-to-money">Utility also applies to money</a></li>
+<li><a href="#bernoullis-idea">Bernoulli’s idea</a><ul>
+<li><a href="#utility-is-relative-to-total-wealth">Utility is relative to total wealth</a></li>
+<li><a href="#relative-utility-means-that-the-utility-function-is-concave">Relative utility means that the utility function is concave</a></li>
+<li><a href="#this-is-the-important-part">This is the important part</a></li>
+</ul></li>
+<li><a href="#expected-utility-theory">Expected Utility theory</a><ul>
+<li><a href="#expected-utility-theory-applied-to-the-salad-burger-decision">Expected Utility theory applied to the salad-burger decision</a></li>
+<li><a href="#expected-utility-theory-applied-to-the-gambling-problem">Expected Utility theory applied to the gambling problem</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<iframe src="https://arizona.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=34d6d225-eede-4681-95ee-ac40015453d4&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+</iframe>
+<h1 id="expected-utility-theory-1">Expected Utility Theory 1</h1>
+<p>Last week we introduced our first theory of decision making, Expected Value theory. This theory was nice from a mathematical perspective, but a complete disaster in terms of predicting human behavior. In particular it has (at least) three major problems that we would like to address</p>
+<ol type="1">
+<li>It can’t handle non-monetary decisions
+<ul>
+<li>Like between a burger and a salad</li>
+</ul></li>
+<li>It doesn’t predict human gambling behavior
+<ul>
+<li>e.g. it can’t account for the existence of Las Vegas</li>
+</ul></li>
+<li>It makes completely crazy predictions for the St Petersburg paradox</li>
+</ol>
+<p>This week we will introduce a new theory, called Expected Utility theory, that can address all of these problems. In fact, we only need to make one small tweak to Expected Value theory to explain all three, and that is to introduce the concept of <strong>Utility</strong>.</p>
+<p>Today we will address the first two: handling monetary decisions and predicting human behavior. Next class we will do more on human behavior. In the bonus material we will also show how Expected Utility theory can solve the St Petersburg paradox.</p>
+<h2 id="utility">Utility</h2>
+<p>When we make decisions in the real world, such as choosing between a salad and a burger for lunch, we don’t (just) compute the monetary value of things, we care about how useful those things are to us. That is we care about their <em>utility</em> to us.</p>
+<p>For example, in the salad-burger choice, if we’re on a diet we may prize the health benefits of a salad over the pleasures of eating a burger, in which case a salad is more useful for us than the burger.</p>
+<figure>
+<div style="text-align:center">
+<p><img src="Week_08a_salad.png"
+     alt="Vegas"
+     height=200px
+      /> <img src="Week_08a_burger.png"
+     alt="Vegas"
+     height=200px
+      /></p>
+</div>
+</figure>
+<p>Another example is deciding between studying and hanging out with friends. There’s no (direct) monetary value involved in this decision, so Expected Value theory is out, but the two options may have different utility. If it’s the night before a big test, then studying might have high utility, but if the test isn’t for weeks then the utility of studying will be low.</p>
+<p>So, the simplest extension of Expected Value theory that we could propose is that instead of thinking in terms of monetary values, in real-world decisions we should think in terms of utilities.</p>
+<h2 id="utility-also-applies-to-money">Utility also applies to money</h2>
+<p>The concept of utility can also be applied to money itself. That is, we value money not for the dollar bills themselves, but for how useful they are in getting us things we want.</p>
+<p>Crucially, this utility of money is subjective, meaning it’s different from person to person. To see this consider how useful it would be to have an extra million dollars.</p>
+<p>For most people, $1,000,000 is a life changing amount of money — you could buy a house, pay off debt, maybe even quit your job. So the utility of a million is high for most people.</p>
+<p>But now think about how useful an extra million would be to a billionaire? For people like Oprah Winfrey and Jeff Bezos, $1,000,000 is a rounding error in their net worth (for Oprah it’s 0.04% of her net worth, for Jeff it’s 0.0006%!). These folks can make many times more than a million dollars with just a <a href="https://www.theguardian.com/technology/2020/jul/21/jeff-bezos-the-worlds-richest-man-added-10bn-to-his-fortune-in-just-one-day">good day in the stock market</a>.</p>
+<figure>
+<div style="text-align:center">
+<p><img src="Week_08a_oprah.png"
+     alt="Vegas"
+     height=200px
+      /></p>
+</div>
+<figcaption>
+</figcaption>
+</figure>
+<p>For billionaires a million dollars — the same amount of money that would be life changing for you and me — has almost no utility at all!</p>
+<p>The utility of money is subjective.</p>
+<h2 id="bernoullis-idea">Bernoulli’s idea</h2>
+<p>In 1738, a mathematician Daniel Bernoulli, ran with the idea that utility is subjective to derive an expression for how the utility of money might change with total wealth. From that expression, he was able to solve the St Petersburg paradox, which was actually proposed by his cousin Nicolas Bernoulli (the <a href="https://en.wikipedia.org/wiki/Bernoulli_family">Bernoullis</a> was an extremely talented family of mathematicians and academics).</p>
+<p>I’m going to show you mathematics he did. This will be scary for some of you, but I want you to see it. You don’t have to understand every step, but I want you to know that it can be done and I want you to understand the qualitative properites of the curve at the end.</p>
+<h3 id="utility-is-relative-to-total-wealth">Utility is relative to total wealth</h3>
+<p>Bernoulli’s idea was that the change in utility (<span class="math inline">\(dU\)</span>, where the <span class="math inline">\(d\)</span> means “small bit of” and <span class="math inline">\(U\)</span> stands for utility) associated with a small change in my wealth (<span class="math inline">\(dW\)</span>) should be equal to the <em>relative</em> amount by which <span class="math inline">\(dW\)</span> changes my total wealth <span class="math inline">\(W\)</span>.</p>
+<p>Written mathematically, this says</p>
+<p><span class="math display">\[dU = U(dW) = \frac{dW}{W}\]</span></p>
+<p>All this equation is doing is putting our intuition about the million dollars into math. In this case,</p>
+<p><span class="math display">\[dW = 1,000,000\]</span></p>
+<p>and <span class="math inline">\(W\)</span> depends on the person. For the average US person under 35, with net worth about $6,900 (in 2019), this gives a change in utility from receiving a million dollars as</p>
+<p><span class="math display">\[dU = \frac{dW}{W} = \frac{1,000,000}{6,900} \approx 145\]</span></p>
+<p>That is a million dollars would increase this person’s net worth by 14,500%.</p>
+<p>For Jeff Bezos, the same million only has a utility of</p>
+<p><span class="math display">\[dU = \frac{dW}{W} = \frac{1,000,000}{178,200,000,000} \approx 0.0000056\]</span></p>
+<p>Put another way, a million dollars would increase Jeff Bezos’ net worth by only 0.00056%. He is very rich indeed!</p>
+<h3 id="relative-utility-means-that-the-utility-function-is-concave">Relative utility means that the utility function is concave</h3>
+<p>Now, this expression for an incremental increase in Utility</p>
+<p><span class="math display">\[dU = U(dW) = \frac{dW}{W}\]</span></p>
+<p>allows us to compute the utility for any value of <span class="math inline">\(W\)</span>. To do this we just need to <em>integrate</em> the above equation. Don’t worry if you don’t remember this from calculus, but to do this you just write this</p>
+<p><span class="math display">\[U = \int \frac{1}{W} dW\]</span></p>
+<p>and then solve the integral to get this</p>
+<p><span class="math display">\[U = \log W\]</span></p>
+<h3 id="this-is-the-important-part">This is the important part</h3>
+<p>Don’t worry if you didn’t follow that last step, <strong>this is the important part.</strong> We can use this equation for <span class="math inline">\(U\)</span> in terms of <span class="math inline">\(W\)</span> to plot what <span class="math inline">\(U\)</span> should look like as a function of <span class="math inline">\(W\)</span>.</p>
+When we do that we get a plot that you’ll be seeing over and over again in the next few classes.
+<div style="text-align:center">
+<p><img src="Week_08a_log.png"
+     alt="log"
+     width=80%
+      /></p>
+</div>
+<p>The key thing about this plot is its <em>shape</em>, which is called <em>concave</em> and the utility curve is an example of a <em>concave utility curve</em>.</p>
+<p><strong>The key property of concave utility curves is that their slope decreases as the total wealth gets bigger.</strong></p>
+<p>Other forms for <span class="math inline">\(U\)</span> have this too, and actually for the remainder of the class we will use a simpler form than the log equation (which has trouble with zeros). Instead we will use a square root utility function (blue line below), which has the same property of being less steep as <span class="math inline">\(W\)</span> increases.</p>
+<p><span class="math display">\[U = \sqrt{W}\]</span></p>
+<div style="text-align:center">
+<p><img src="Week_08a_sqrt.png"
+     alt="log"
+     width=80%
+      /></p>
+</div>
+<h2 id="expected-utility-theory">Expected Utility theory</h2>
+<p>Now that we know that we can assign utilities to arbitrary things (like burgers) and how we should assign utility to money, we can finally construct our next theory of decision making: Expected Utility theory.</p>
+<p>In our first theory, Expected Value theory, we made the decision based on the average outcome we could expect from each option.</p>
+<p>In our new theory, Expected <em>Utility</em> theory, we make the decision based on the average <em>utility</em> of the outcomes we can expect from each option. That is we compute the Expected Utility</p>
+<p><span class="math display">\[EU = \sum_i p_i U_i\]</span></p>
+<p>where <span class="math inline">\(p_i\)</span> is the probability of outcome <span class="math inline">\(i\)</span>, just like it was before and <span class="math inline">\(U_i\)</span> is the utility of outcome <span class="math inline">\(i\)</span>.</p>
+<h3 id="expected-utility-theory-applied-to-the-salad-burger-decision">Expected Utility theory applied to the salad-burger decision</h3>
+<p>For the salad-burger choice, Option 1 is salad and Option 2 is burger.</p>
+<p>For Option 1 there’s only one outcome (you get salad) with a utility of <span class="math inline">\(U_1 = U(\mbox{salad})\)</span> and you get this option with probability <span class="math inline">\(p_1 = 1\)</span> (most restaurants serve the meal that was ordered with 100% probability!). So the expected utility of this option is just</p>
+<p><span class="math display">\[EU(\mbox{Option } 1) = U(\mbox{salad})\]</span></p>
+<p>For Option 2 there’s outcome is a burger with utility <span class="math inline">\(U_1 = U(\mbox{burger}\)</span> and probability <span class="math inline">\(p_1 = 1\)</span>.</p>
+<p><span class="math display">\[EU(\mbox{Option } 2) = U(\mbox{burger})\]</span></p>
+<p>And so if <span class="math inline">\(U(\mbox{salad}) &gt; U(\mbox{burger})\)</span> we choose the salad otherwise we choose the burger.</p>
+<h3 id="expected-utility-theory-applied-to-the-gambling-problem">Expected Utility theory applied to the gambling problem</h3>
+<p>Let’s go back to our simple gambling decision</p>
+<p><i> Which do you prefer?</p>
+<ol type="1">
+<li>100% chance of $240</li>
+<li>25% chance of $1000 and a 75% chance of $0</li>
+</ol>
+<p></i></p>
+<p>Let’s also assume a square root utility function (log can be problematic with zeros!), so</p>
+<p><span class="math display">\[U = \sqrt{W}\]</span></p>
+<p>Now let’s compute the expected utility of these two options (assuming we start from 0 wealth).</p>
+<p>For Option 1 there’s only one outcome with utility <span class="math inline">\(U_1 = \sqrt{240} \approx 15.5\)</span> that occurs with probability <span class="math inline">\(p_1 = 1\)</span>. So the Expected Utility of the first option is just</p>
+<p><span class="math display">\[U(\mbox{Option } 1) = p_1 U_1 =  1 \times \sqrt{240} \approx 15.5\]</span></p>
+<p>For Option 2 there are two outcomes.</p>
+<ul>
+<li>The first outcome ($1000) has utility <span class="math inline">\(U_1 = \sqrt{1000} \approx 31.6\)</span> and occurs with probability, <span class="math inline">\(p_1 = 0.25\)</span>.</li>
+<li>The second outcome ($0) has utility <span class="math inline">\(U_2 = \sqrt{0} = 0\)</span> and occurs with probability <span class="math inline">\(p_2 = 0.75\)</span></li>
+</ul>
+<p>Putting this together gives us the Expected Utility for Option 2 at</p>
+<p><span class="math display">\[EU(\mbox{Option } 2) = p_1 U_1 + p_2 U_2 = 0.25 \times \sqrt{1000} + 0.75 \times \sqrt{0} \approx 7.9\]</span></p>
+<p>So Option 1 has expected utility 15.5 and Option 2 has expected utility 7.9, so Expected Utility theory picks Option 1 — the safe, or <em>risk averse</em>, option.</p>
+<p>Recall that this is much more in line with what people (i.e. you!) did on this question and is the opposite of what Expected <em>Value</em> theory did …</p>
+<div style="text-align:center">
+<p><img src="../Week_07/Week_07a_survey.png"
+     alt="StPetersburg_results"
+     width=80%
+      /></p>
+</div>
+</body>
+</html>

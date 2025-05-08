@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSY 333 — Week 7, Class 1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  /*
+   * I add this to html files generated with pandoc.
+   171     5    32
+  139    11    41
+  107    17    49
+   76    23    58
+   44    29    66
+   12    35    75
+  
+   171     5    32
+  185    36    32
+  199    66    32
+  213    97    31
+  227   127    31
+  241   158    31
+  
+  171     5    32
+  194    56    32
+  218   107    31
+  241   158    31
+   */
+  
+  html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    color: black;/*#444;*/
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1em;
+    margin: auto;
+    max-width: 42em;
+    background: #fefefe;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 125%;
+    /*margin-top: 2em;*/
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: rgb(171,5,32);
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: rgb(194,56,32);
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    color: rgb(218,107,31);
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    color: rgb(241,158,31);
+    font-size: 1.1em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.9em;
+  }
+  
+  </style>
+</head>
+<body>
+<header>
+<h1 class="title">PSY 333 — Week 7, Class 1</h1>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#decisions">Decisions</a><ul>
+<li><a href="#studying-decisions-like-perception">Studying decisions like perception</a></li>
+<li><a href="#gambling-decisions">Gambling decisions</a></li>
+<li><a href="#a-first-theory-of-decision-making-expected-value-theory">A first theory of decision making: Expected Value theory</a><ul>
+<li><a href="#computing-the-expected-value">Computing the Expected Value</a></li>
+<li><a href="#making-the-decision">Making the decision</a></li>
+<li><a href="#the-equation-for-expected-value">The equation for Expected Value</a></li>
+</ul></li>
+<li><a href="#comparing-the-behavior-of-expected-value-theory-to-human-behavior">Comparing the behavior of Expected Value theory to human behavior</a></li>
+</ul></li>
+</ul>
+</nav>
+<iframe src="https://arizona.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=8e8a4b85-bf4b-49d7-8379-ac32012a3e4c&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay">
+</iframe>
+<h1 id="decisions">Decisions</h1>
+<p>In this part of the class, we will move on from judgments to study decision making.</p>
+<h2 id="studying-decisions-like-perception">Studying decisions like perception</h2>
+<p>When we study visual perception we often present highly controlled stimuli to understand how the brain processes the sensory cues. For example, consider this highly controlled visual stimulus to probe how the brain responds to different spatial frequencies</p>
+<div style="text-align:center">
+<p><img src="Week_07a_lines1.png"
+     alt="me"
+     width=80%
+      /></p>
+</div>
+<p>The above stimulus is made up of areas of light and dark that get progressively closer together as you go from left (when dark and light are far apart, corresponding to a low spatial frequency) to right (when they are close together, corresponding to a high spatial frequency).</p>
+<p>Going from top to bottom, the <em>contrast</em> between the light and dark bars decreases. At the top, the dark bars are black and the light bars are white. Going down the dark bars get lighter and the light bars get darker.</p>
+<p>What’s interesting here even though the contrast changes equally for all the bars as you go down the image, you start to lose the bars earlier at the lowest and highest spatial frequencies. That is, you can “see” certain spatial frequencies better than others. Below I’ve drawn an line roughly corresponding to what I can perceive. Below the line everything looks grey to me. Above the line I can see the bars.</p>
+<div style="text-align:center">
+<p><img src="Week_07a_lines2.png"
+     alt="me"
+     width=80%
+      /></p>
+</div>
+<p>This is a really beautiful demonstration of how using a simple a highly controlled stimulus we can shed light on the properties of the visual system. In this case, measuring its “Spatial Frequency Contrast Selectivity.”</p>
+<p>The goal of much research in decision making is to design simple and highly controlled decisions to probe the cognitive systems underlying decision making.</p>
+<h2 id="gambling-decisions">Gambling decisions</h2>
+<p>One way in which we can set up highly controlled decisions is by having people make gambling decisions. For example, consider this question, which I asked you in the start of semester survey</p>
+<p><i> Which do you prefer?</p>
+<ol type="1">
+<li>100% chance of $240</li>
+<li>25% chance of $1,000 and a 75% chance of $0 </i></li>
+</ol>
+<p>This is a very “simple” decision where all the information needed to make the decision is present. In addition, this decision has a “correct,” answer if people’s goal is to maximize their <em>average</em> payout (or <em>Expected Value</em>). That we can compute the correct answer allows us to quantify how people deviate from it — that is, how they make mistakes.</p>
+<p>This “correct” answer also allows us to build our first mathetmatical theory of decision making. As we shall see, this theory is a terrible predictor of human behavior, but it’s a good start and provides a basis for the more complex theories to come.</p>
+<h2 id="a-first-theory-of-decision-making-expected-value-theory">A first theory of decision making: Expected Value theory</h2>
+<p>In Expected Value Theory, we assume that people want to maximize their Expected Value — i.e. their average future payout. This involves two steps:</p>
+<ol type="1">
+<li>Compute the Expected Value of all options</li>
+<li>Choose the option with highest Expected Value</li>
+</ol>
+<h3 id="computing-the-expected-value">Computing the Expected Value</h3>
+<p>Computing the Expected Value means computing the average payout we expect from each option.</p>
+<p>For the example above, the Expected Value of the first option (100% chance of $240) is pretty simple, if we choose this option we expect to get $240.</p>
+<p><span class="math display">\[EV(\mbox{option } 1) = \$240\]</span></p>
+<p>The expected value of the second option (25% chance of $1000 and 75% chance of $0) is trickier. One way to think about it is to imagine picking this option 1000 times.</p>
+<ul>
+<li>Out of 1000 times you’d expect to win 250 times (25% of 1000) and lose 750 times (75% of 1000).</li>
+<li>In each of the 250 wins you’d earn $1000 taking you to a total winnings of $250,000 from 1000 choices.</li>
+<li>So the average amount per choice is $250 or</li>
+</ul>
+<p><span class="math display">\[EV(\mbox{option } 2) = \$250\]</span></p>
+<h3 id="making-the-decision">Making the decision</h3>
+<p>To make the decision we simply compare <span class="math inline">\(EV(\mbox{option } 1)\)</span> with <span class="math inline">\(EV(\mbox{option } 2)\)</span> and pick the highest. In this case the $240 we expect from option 1 is lower than the $250 we expect from option 2 so we should choose option 2.</p>
+<h3 id="the-equation-for-expected-value">The equation for Expected Value</h3>
+<p>More generally there is an equation we can use to compute the Expected Value of an option</p>
+<p><span class="math display">\[EV = \sum_i p_i V_i\]</span></p>
+<p>where <span class="math inline">\(p_i\)</span> is the probability of each outcome, <span class="math inline">\(i\)</span>, associated with the option, and <span class="math inline">\(V_i\)</span> is the value of each outcome, <span class="math inline">\(i\)</span>.</p>
+<p>The big <span class="math inline">\(\sum_i\)</span> is a fancy way of saying “take the sum over all outcomes <span class="math inline">\(i\)</span>.”</p>
+<p>This equation may seem a little scary, but it’s just another way of writing “take the average.” Let’s see how it plays out for our simple decision.</p>
+<h4 id="using-the-equation-to-compute-the-expected-value-of-option-1">Using the Equation to compute the Expected Value of Option 1</h4>
+<p>For Option 1 (100% chance of $240), we only have one outcome, the $240 for sure. For this one outcome, <span class="math inline">\(i = 1\)</span> because it’s the first outcome and the value of this outcome,</p>
+<p><span class="math display">\[V_1 = 240\]</span></p>
+<p>The probability of this outcome <span class="math inline">\(p_1 = 1\)</span> (or 100%). Sticking these terms into the equation we get that the Expected Value for option 1 is</p>
+<p><span class="math display">\[EV(\mbox{option } 1) = p_1 V_1 = 1 \times 240 = 240\]</span></p>
+<p>Which is exactly what we had before, and also obeys common sense! When the payoff is $240 with 100% probability then you expect to receive $240 when you choose that option!</p>
+<h4 id="using-the-equation-to-compute-the-expected-value-of-option-2">Using the Equation to compute the Expected Value of Option 2</h4>
+<p>For Option 2 (25% chance of $1,000 or 75% chance of $0) we have two outcomes. Either we win (first outcome) and get $1000 or lose (second outcome) and get $0.</p>
+<p>For the first outcome, <span class="math inline">\(i = 1\)</span> and the value of the outcome <span class="math inline">\(V_1 = 1000\)</span>. The probability of this outcome is <span class="math inline">\(p_1 = 0.25\)</span>, corresponding to the 25% chance of winning.</p>
+<p>For the second outcome, <span class="math inline">\(i = 2\)</span> and the value of the outcome <span class="math inline">\(V_2 = 0\)</span>. The probability of this second outcome is <span class="math inline">\(p_2 = 0.75\)</span>, corresponding to a 75% chance of winning.</p>
+<p>Putting this all together, the Expected Value for Option 2 is</p>
+<p><span class="math display">\[EV(\mbox{option } 2) = p_1 V_1 + p_2 V_2 = 0.25 \times 1000 + 0.75 \times 0 = 250\]</span></p>
+<p>which is the same answer we had before.</p>
+<p>In the Assignment you will use this equation to compute a bunch of different Expected Values for a bunch of different questions. By the end the equation should make perfect sense.</p>
+<h2 id="comparing-the-behavior-of-expected-value-theory-to-human-behavior">Comparing the behavior of Expected Value theory to human behavior</h2>
+<p>As simple as it is, Expected Value theory is quite different from anything we’ve encountered before in this class (and most likely anything you’ve encountered before in Psychology). Here is a mathematical equation that we can use to make <em>precise, quantitative predictions</em> about human behavior. In contrast, most of the theories in Psychology are are Verbal Theories that make qualitative predictions.</p>
+<p>As an example of a Verbal Theory, when we talked about the Availability Heuristic in the first part of this class, we didn’t make quantitative predictions about the <em>exact value</em> that people would assign to the likelihood of different events. Instead we simply said that they would, for example, tend to over estimate the probability of plane crashes because plane crashes are salient events that are more <em>available</em> to our imagination. This lack of quantitative prediction doesn’t make Verbal Theories bad, but it can make them more difficult to test because they can be consistent with a wide range of behaviors and, in the worst case, are open to interpretation.</p>
+<p>Expected Value theory is a different beast. When we applied it to our toy gambling problem, it made the prediction that people would <em>always</em> choose the 25% of 1000 (also known as the “risky” option). This is wonderful from an experimental perspective, because all we need to do is run an experiment asking people to choose between these two options and if they don’t always choose the risky option <strong>we can rule Expected Value Theory out</strong> as a theory of human decision making.</p>
+<p>So, do people always choose the risky option in our gambling decision? When I asked you this question at the start of the semester, as a class, you had a strong preference <em>not</em> to choose the risky option, with almost 90% of you choosing the $240 for sure!</p>
+<div style="text-align:center">
+<p><img src="Week_07a_survey.png"
+     alt="me"
+     width=80%
+      /></p>
+</div>
+<p>This might sound bad, but it’s actually GREAT! We ruled Expected Value theory out as a theory of human decision making! <em>How often do you hear that in Psychology, that we can disprove a model with data?</em></p>
+<p>Also, get used to it in this section of the course, because everything I’m going to teach you in the next week or so will turn out to be wrong! But by proving each theory wrong using more and more sophisticated experiments, we will eventually land on something that might be right …</p>
+</body>
+</html>

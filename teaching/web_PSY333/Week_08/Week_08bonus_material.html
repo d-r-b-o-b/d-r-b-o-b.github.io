@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSY 333 — Week 8, Class 1 bonus</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  /*
+   * I add this to html files generated with pandoc.
+   171     5    32
+  139    11    41
+  107    17    49
+   76    23    58
+   44    29    66
+   12    35    75
+  
+   171     5    32
+  185    36    32
+  199    66    32
+  213    97    31
+  227   127    31
+  241   158    31
+  
+  171     5    32
+  194    56    32
+  218   107    31
+  241   158    31
+   */
+  
+  html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    color: black;/*#444;*/
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1em;
+    margin: auto;
+    max-width: 42em;
+    background: #fefefe;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 125%;
+    /*margin-top: 2em;*/
+    font-weight: bold;
+  }
+  
+  h4, h5, h6 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: rgb(171,5,32);
+    font-size: 2em;
+  }
+  
+  h2 {
+    color: rgb(194,56,32);
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    color: rgb(218,107,31);
+    font-size: 1.2em;
+  }
+  
+  h4 {
+    color: rgb(241,158,31);
+    font-size: 1.1em;
+  }
+  
+  h5 {
+    font-size: 1em;
+  }
+  
+  h6 {
+    font-size: 0.9em;
+  }
+  
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">PSY 333 — Week 8, Class 1 bonus</h1>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#the-solution-to-the-st-petersburg-paradox">The solution to the St Petersburg paradox</a><ul>
+<li><a href="#the-st-petersburg-paradox">The St Petersburg paradox</a></li>
+<li><a href="#the-expected-utility-of-the-st-petersburg-game">The Expected Utility of the St Petersburg game</a></li>
+<li><a href="#converting-utility-back-into-money">Converting utility back into money</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="the-solution-to-the-st-petersburg-paradox">The solution to the St Petersburg paradox</h1>
+<h2 id="the-st-petersburg-paradox">The St Petersburg paradox</h2>
+<p>In the St Petersburg paradox, we asked how much you would be willing to pay to play this game …</p>
+<blockquote>
+<p><em>Imagine a game in which a coin is tossed repeatedly until it lands on tails once, and then you are paid <span class="math inline">\(2^k\)</span>, where <span class="math inline">\(k\)</span> equals the number of tosses until tails appeared.</em></p>
+</blockquote>
+<p>So in this game I toss a coin over and over again until it comes up tails when the game ends. I then count how many times I tossed the coin in this game, <span class="math inline">\(k\)</span>, and I pay you 2 raised to the power of <span class="math inline">\(k\)</span> dollars.</p>
+<p>In one game you might see heads on the first throw, heads on the second throw and tails on the third throw. I can represent this game as</p>
+<blockquote>
+<p>HHT</p>
+</blockquote>
+<p>If you saw this, the game would have lasted <span class="math inline">\(k = 3\)</span> coin tosses and you would earn <span class="math inline">\(2^k = 2^3 = 8\)</span> dollars.</p>
+<p>Here are a few other possible outcomes …</p>
+<table style="width:65%;">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Coin toss result</th>
+<th style="text-align: center;">Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">T</td>
+<td style="text-align: center;">$2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">HT</td>
+<td style="text-align: center;">$4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">HHT</td>
+<td style="text-align: center;">$8</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">HHHT</td>
+<td style="text-align: center;">$16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">HHHHT</td>
+<td style="text-align: center;">$32</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">HHHHHT</td>
+<td style="text-align: center;">$64</td>
+</tr>
+</tbody>
+</table>
+<p>The paradox arises because the St Petersburg game has infinite Expected Value, so you should be willing to pay <em>any</em> amount of money to play it (even trillions of dollars). How can Expected Utility theory solve this problem?</p>
+<h2 id="the-expected-utility-of-the-st-petersburg-game">The Expected Utility of the St Petersburg game</h2>
+<p>Let’s compute the Expected Utility of the St Petersburg game. For simplicity let’s assume we have a square root utility function, so</p>
+<p><span class="math display">\[U = \sqrt{W}\]</span></p>
+<p>Let’s start with the equation for Expected utility</p>
+<p><span class="math display">\[EU = \sum_i p_i U_i\]</span></p>
+<p>and expand out the sum …</p>
+<p><span class="math display">\[EU = \sum_i p_i U_i = p_1 U_1 + p_2 U_2 + p_3 U_3 + ...\]</span></p>
+<p>where the <span class="math inline">\(...\)</span> means keep going until you’ve considered all possible outcomes of the St Petersburg game.</p>
+<p>Recall that there are infinite possible outcomes for this game, but let’s consider the first three in detail</p>
+<ul>
+<li>The first possible outcome is that we toss a coin and get tails (T). This outcome occurs with probability <span class="math inline">\(p_1 = 0.5\)</span> and in this case we earn <span class="math inline">\(V_1 = 2\)</span>, which has <span class="math inline">\(U_1 = \sqrt{2} \approx 1.41\)</span>.</li>
+<li>The second possible outcome is that we get heads on the first toss and tails on the second (HT). This occurs with probability <span class="math inline">\(p_2 = 0.25\)</span> and gives us <span class="math inline">\(V_2 = 4\)</span>, which has utility <span class="math inline">\(U_2 = \sqrt{4} = 2\)</span>.</li>
+<li>The third possible outcome is HHT occurs with probability <span class="math inline">\(p_3 = 0.125\)</span> and has value <span class="math inline">\(V_3 = 8\)</span>, which has utility <span class="math inline">\(U_3 = \sqrt{8} \approx 2.83\)</span>.</li>
+</ul>
+<p>Putting these into the equation, we see something interesting start to happen …</p>
+<p><span class="math display">\[\begin{equation}
+\begin{split}
+  EV &amp;= 0.5 &amp;\times 1.41 &amp;+ 0.25 &amp;\times 2 &amp;+ 0.125 &amp;\times 2.83 &amp;+ p_4 V_4 + ... \\
+     &amp;=     &amp; 0.71       &amp;+      &amp; 0.5       &amp;+       &amp; 0.35      &amp;+ p_4 V_4 + ...
+\end{split}
+\end{equation}\]</span></p>
+<p>Note that, unlike the Expected Value case where the terms were all 1, now the terms in the sum are decreasing, from 0.71 to 0.5 to 0.35. This suggests (but does not prove), that maybe the infinite sum will be finite. Indeed, if we compute more and more terms (which we can easily do in Google sheets) we find that the terms do keep decreasing (although they are always positive) and the sum is finite with a value of</p>
+<p><span class="math display">\[EU \approx 2.41\]</span></p>
+<p>This is much less than infinity and suggests that people should be willing to pay a finite amount of money to play the game.</p>
+<p>But how much money are they willing to pay? Utility is not measured in units of dollars, remember that it is a subjective measure of how those dollars feel to you. To get the monetary amount people should be willing to pay we need to do one more calculation …</p>
+<h2 id="converting-utility-back-into-money">Converting utility back into money</h2>
+<p>To convert the utility back into a monetary amount we need to invert the Utility function. Put another way, we need to figure out the amount of money, <span class="math inline">\(M\)</span>, that has utility <span class="math inline">\(U = 2.41\)</span>.</p>
+<p>If we have a square root utility function, we know that <span class="math inline">\(U\)</span> and <span class="math inline">\(M\)</span> are related like this …</p>
+<p><span class="math display">\[U = 2.41 = \sqrt{M}\]</span></p>
+<p>To find <span class="math inline">\(M\)</span> we simply need to solve this equation, which we can do by taking the square of both sides to get …</p>
+<p><span class="math display">\[\begin{equation}
+  \begin{split}
+    M &amp;= U^2 \\
+      &amp;= 2.41^2 \\
+      &amp;= $5.81
+  \end{split}
+\end{equation}\]</span></p>
+<p>This shows that people with a square root utility function should be willing to spend a maximum of $5.81 to play the St Petersburg game. Comparing this number with the human behavior we find that it’s actually a pretty good fit!</p>
+<div style="text-align:center">
+<p><img src="Week_08a_StPeters.png"
+     alt="Vegas"
+     width=80%
+      /></p>
+</div>
+</body>
+</html>
