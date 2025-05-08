@@ -238,12 +238,15 @@ def make_resources():
             attr(cls="container")
             make_navigation(doc)
             h1(doc_name)
+    h2('Teaching')
+
+    a('Modeling the mind (Fall 2020)', href='./teaching/web_NSCS344/index.html')
    
     dom_write(f'{doc_name.lower()}.html', doc)
     dom_open(f'{doc_name.lower()}.html')
 
-make_people()
-make_research()
-make_publications()
+# make_people()
+# make_research()
+# make_publications()
 make_resources()
 

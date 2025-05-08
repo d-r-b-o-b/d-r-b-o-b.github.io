@@ -3,15 +3,15 @@ title: PSY 333 --- Judgment and Decision Making
 ...
 
 
-----------------------------------
+<!-- ---------------------------------- -->
 
 
 
 
-# Course information
+<!-- # Course information -->
 
-  * [Class mechanics](classMechanics.html)
-  * [Syllabus](courseInformation.html)
+  <!-- * [Class mechanics](classMechanics.html)
+  * [Syllabus](courseInformation.html) -->
 
 
 
